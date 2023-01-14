@@ -30,7 +30,7 @@
             this.progressLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.currentName = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.OpenWebsiteBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
@@ -93,21 +93,22 @@
             this.currentName.TabIndex = 6;
             this.currentName.Text = "Current: ...";
             // 
-            // guna2Button1
+            // OpenWebsiteBtn
             // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 19;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(147, 234);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(300, 40);
-            this.guna2Button1.TabIndex = 7;
-            this.guna2Button1.Text = "Open website";
+            this.OpenWebsiteBtn.AutoRoundedCorners = true;
+            this.OpenWebsiteBtn.BorderRadius = 19;
+            this.OpenWebsiteBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.OpenWebsiteBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.OpenWebsiteBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.OpenWebsiteBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.OpenWebsiteBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.OpenWebsiteBtn.ForeColor = System.Drawing.Color.White;
+            this.OpenWebsiteBtn.Location = new System.Drawing.Point(147, 234);
+            this.OpenWebsiteBtn.Name = "OpenWebsiteBtn";
+            this.OpenWebsiteBtn.Size = new System.Drawing.Size(300, 40);
+            this.OpenWebsiteBtn.TabIndex = 7;
+            this.OpenWebsiteBtn.Text = "Open website";
+            this.OpenWebsiteBtn.Click += new System.EventHandler(this.OpenWebsiteBtn_Click);
             // 
             // guna2Button2
             // 
@@ -150,7 +151,7 @@
             this.ClientSize = new System.Drawing.Size(589, 378);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.OpenWebsiteBtn);
             this.Controls.Add(this.currentName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressLabel);
@@ -177,7 +178,7 @@
         private System.Windows.Forms.Label progressLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label currentName;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button OpenWebsiteBtn;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }

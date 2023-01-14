@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -92,6 +93,11 @@ namespace BookmarkManager
             }
 
             currentBookmark = currentFolder.Bookmarks[currentBookmarkIdx];
+        }
+
+        private void OpenWebsiteBtn_Click(object sender, EventArgs e) {
+            if (currentBookmark.IsWebsite)
+                Process.Start(currentBookmark.URL);
         }
     }
 

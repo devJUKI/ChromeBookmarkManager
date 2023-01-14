@@ -34,11 +34,6 @@ namespace BookmarkManager
             string[] lines = File.ReadAllLines(filePath);
             Folder root = new Folder().Parse(lines);
 
-            //root.Bookmarks[0].Name = "Testas Refworku";
-
-            //string exportString = root.GetExportString();
-            //File.WriteAllText("testas.html", exportString);
-
             new BookmarkEditForm(root).Show();
         }
     }

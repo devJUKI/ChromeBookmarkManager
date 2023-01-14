@@ -87,7 +87,7 @@ namespace BookmarkManager
 
             // Print folder content
             while (exportedFolders < Folders.Count || exportedBookmarks < Bookmarks.Count) {
-                int bookmarkIdxInFolder = -1; 
+                int bookmarkIdxInFolder = -1;
                 int folderIdxInFolder = -1;
 
                 if (exportedBookmarks < Bookmarks.Count)
@@ -119,23 +119,11 @@ namespace BookmarkManager
                     exportString += "<DT><A HREF=\"" + Bookmarks[exportedBookmarks].URL + "\"" +
                         Bookmarks[exportedBookmarks].Attributes + ">" + Bookmarks[exportedBookmarks].Name + "</A>\n";
                     exportedBookmarks++;
-                } else {
+                }
+                else {
                     exportString += Folders[exportedFolders].GetExportString(ref indentation);
                     exportedFolders++;
                 }
-
-                //if (exportedBookmarks < Bookmarks.Count &&
-                //    Bookmarks[exportedBookmarks].IndexInFolder == index) {
-                //    exportString += new string(' ', spaceWidth * indentation);
-                //    // Check if attributes already have space at the start
-                //    exportString += "<DT><A HREF=\"" + Bookmarks[exportedBookmarks].URL + "\"" +
-                //        Bookmarks[exportedBookmarks].Attributes + ">" + Bookmarks[exportedBookmarks].Name + "</A>\n";
-                //    exportedBookmarks++;
-                //}
-                //else {
-                //    exportString += Folders[exportedFolders].GetExportString(ref indentation);
-                //    exportedFolders++;
-                //}
 
                 index++;
             }
